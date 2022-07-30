@@ -1,4 +1,9 @@
-import { Navbar, Center, useMantineColorScheme, Stack } from '@mantine/core';
+import {
+  Navbar,
+  Center,
+  useMantineColorScheme,
+  Stack,
+} from '@mantine/core';
 import {
   DeviceAnalytics,
   Home2,
