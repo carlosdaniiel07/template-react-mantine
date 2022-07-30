@@ -2,7 +2,6 @@ import {
   ColorScheme,
   ColorSchemeProvider,
   MantineProvider,
-  Text,
 } from '@mantine/core';
 import { useHotkeys, useLocalStorage } from '@mantine/hooks';
 import { NotificationsProvider } from '@mantine/notifications';
