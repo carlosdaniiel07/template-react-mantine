@@ -11,7 +11,6 @@ export const useCountStore = create<CountState>((set) => ({
   increment: () =>
     set((state) => ({
       count: state.count + 1,
-      updatedAt: new Date(),
     })),
   reset: () =>
     set(() => ({

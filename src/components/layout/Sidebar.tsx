@@ -1,16 +1,12 @@
+import { Navbar, Center, useMantineColorScheme, Stack } from '@mantine/core';
 import {
-  Navbar,
-  Center,
-  useMantineColorScheme,
-  Stack,
-} from '@mantine/core';
-import {
+  Coin,
   DeviceAnalytics,
-  Home2,
   Icon,
   Logout,
   MoonStars,
   Sun,
+  Users,
 } from 'tabler-icons-react';
 import { useLocation } from 'react-router-dom';
 import { LogoSmall } from '~/components/shared';
@@ -23,12 +19,16 @@ type MenuItem = {
 
 const menuItems: MenuItem[] = [
   {
-    route: '/',
-    icon: Home2,
-  },
-  {
     route: '/dashboard',
     icon: DeviceAnalytics,
+  },
+  {
+    route: '/transactions',
+    icon: Coin,
+  },
+  {
+    route: '/users',
+    icon: Users,
   },
 ];
 
@@ -42,7 +42,7 @@ export function Sidebar() {
         <LogoSmall />
       </Center>
       <Navbar.Section grow mt={50}>
-        <Stack justify='center' spacing={0}>
+        <Stack justify='center' spacing={2}>
           {menuItems.map((item, index) => (
             <SidebarItem
               {...item}

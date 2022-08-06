@@ -29,7 +29,7 @@ export default function App() {
           primaryColor: 'blue',
         }}
       >
-        <NotificationsProvider>
+        <NotificationsProvider position='top-center'>
           <Routes />
         </NotificationsProvider>
       </MantineProvider>
